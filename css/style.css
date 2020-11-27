@@ -1,0 +1,118 @@
+*{
+	box-sizing:border-box
+}
+body{
+	font-family:arial
+}
+.todo-container{
+	width: 800px;
+	margin: 30px auto 0;
+	background: #f6f6f6;
+	
+}
+.todo-container .add-task{
+	padding: 20px;
+	background: #669f66;
+	position: relative
+	
+}
+.todo-container .add-task input{
+	display: inline-block;
+	padding:10px 15px;
+	border:none;
+	background: rgb(255 255 255 / .2);
+	width:calc(100% - 20px);
+	color:white;
+	font-size:20px
+	
+}
+.todo-container .add-task input:focus{
+	outline: none;
+	perspective: 500px
+}
+.todo-container .add-task i{
+	position:absolute;
+	right: 40px;
+	top:25px;
+	background: white;
+	height: 35px;
+	width:35px;
+	border-radius: 50%;
+	line-height: 35px;
+	text-align: center;
+	color: #669f66;
+	cursor: pointer;
+	transition: all .3s
+}
+.todo-container .add-task i:hover{
+	transform: rotate(90deg) scalex(2) scaley(2)
+	
+}
+.todo-container .task-content{
+	padding:15px;
+
+}
+.todo-container .task-content .no-task-massege{
+		color:#c9bbbb;
+	font-size: 15px
+}
+.todo-container .task-content > span{
+	display: block;
+	background: white;
+	padding:10px
+}
+.todo-container .task-content > span:not(:last-child){
+	margin-bottom: 15px
+}
+
+.todo-container .task-content .task-box .delete{
+	float: right;
+	background: red;
+	padding: 2px 10px;
+	font-size: 15px;
+	color:snow;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 3px
+}
+.todo-container .task-content .task-box.finished{
+	text-decoration: line-through
+}
+
+.task-state{
+	width: 800px;
+	margin: 10px auto;
+	font-size: 15px;
+	background: #acbfbf;
+	overflow: hidden
+}
+
+.task-state .task-count,
+.task-state .completed-tasks{
+	width: 50%;
+	padding: 10px;
+	float: left
+}
+
+.task-state .completed-tasks{
+	text-align: right
+}
+.task-state .task-count span,
+.task-state .completed-tasks span{
+	color:white;
+	padding: 5px 5px;
+	font-size: 10px;
+	font-weight: bold;
+	border-radius: 4px
+}
+.task-state .task-count span{
+	background: red
+}
+
+.task-state .completed-tasks span{
+	background: aqua
+}
+
+
+
+
